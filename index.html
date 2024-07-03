@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech goals</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align:center;
+        background:rgb(10, 28, 41);
+        color:white;
+    }
+    .goals{
+        font-weight: bolder;
+        font-style: italic;
+        color:rgb(212, 212, 199);
+    }
+    .hlg{
+        font-size: larger;
+        font-weight: 900;
+        text-decoration:solid;
+        color:aquamarine;
+    }
+</style>
+<body>
+    <div class="container">
+ <h1 data-testid="slackDisplayName">HI! I'm Fathia Olajide</h1>   
+ <hr>
+ <h3>I'm an HNG intern</h4>
+    <ol><a data-testid="slackEmail">  https://thefathiaolajide@gmail.com</a></ol>
+    <br>
+
+
+    <img data-testid="slackProfilePicture" src="image.jpeg" href="image.jpeg">
+ <div class="hlg" data-testid="Intro">    My goals for the next 2 years in the tech field are but not limited to
+</div>
+ <ol class="goals" data-testid="goals">
+    <p>Collaborate and Communicate Effectively</p>
+    <p>Optimise Time and Project Management</p>
+    <p>Contribute to Open Source Projects</p>
+    <p> Prioritise Cybersecurity Awareness</p>
+    <p>Network and Grow Professionally</p>
+    <p>Embrace Continuous Learning</p>
+    <p>Improve Work-Life Balance</p>
+    </ol>
+    <ol><a target="_blank" href=" https://scrapeanyweb.site" data-testid="scrapeanywebLink" >  https://scrapeanyweb.site</a></ol>
+ <ol><a target="_blank" href="https://hng.tech/learn" data-testid="hngLink" > https://hng.tech/learn</a></ol>
+ <ol><a target="_blank" href="https://keyword.dog" data-testid="keywordLink"> https://keyword.dog</a></ol>
+<p></p>
+</div>
+<script>
+    const currentTimeUTC = document.querySelector('[data-testid="currentTimeUTC"]');
+const currentDay = document.querySelector('[data-testid="currentDay"]');
+setInterval(() => {
+	const now = new Date();
+	const utcTime = now.toUTCString();
+	const day = now.toLocaleString('en-US', { weekday: 'long' });
+	currentTimeUTC.textContent = utcTime;
+	currentDay.textContent = day;
+}, 1000);
+</script>
+</body>
+</html>
